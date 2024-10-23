@@ -7,4 +7,4 @@
 
 3. Deploy the IaC
     run -> terraform plan
-            terraform apply
+    run -> terraform apply
