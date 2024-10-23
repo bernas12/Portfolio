@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric form</title>
+</head>
+<body>
+    <form id="apiForm" method="POST" action="https://<invoke_API_URL>"> <!-- Input Invoke API URL -->
+        <div>
+            <label># of nodes</label>
+            <input id="N_of_nodes">
+        </div>
+        <div>
+            <label>Market</label>
+            <input id="Market">
+        </div>
+        <div>
+            <label>Country</label>
+            <input id="Country">
+        </div>
+        <div>
+            <label>Customer</label>
+            <input id="Customer">
+        </div>
+        <div>
+            <label>Activity</label>
+            <input id="Activity">
+        </div>
+        <div>
+            <label>Product</label>
+            <input id="Product">
+        </div>
+        <div>
+            <label>Site</label>
+            <input id="Site">
+        </div>
+        <div>
+            <label># of Sites</label>
+            <input id="N_of_sites">
+        </div>
+        <div>
+            <label>Upgrade Version</label>
+            <input id="Upgrade_version">
+        </div>
+        <div>
+            <label>Remarks</label>
+            <input id="Remarks">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('apiForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const form = event.target;
+
+            // Create a JSON object with form data
+            const formData = {
+                N_of_nodes: form.N_of_nodes.value,
+                Market: form.Market.value,
+                Country: form.Country.value,
+                Customer: form.Customer.value,
+                Activity: form.Activity.value,
+                Product: form.Product.value,
+                Site: form.Site.value,
+                N_of_sites: form.N_of_sites.value,
+                Upgrade_version: form.Upgrade_version.value,
+                Remarks: form.Remarks.value
+                
+            };
+
+            fetch(form.action, {
+                method: form.method,
+                body: JSON.stringify(formData),
+                //headers: {
+                    //'Content-Type': 'application/json'
+                //}
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Form submitted successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error submitting the form.');
+            });
+        });
+    </script>
+</body>
+</html>
