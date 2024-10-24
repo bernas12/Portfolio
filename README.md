@@ -8,3 +8,7 @@ Bash Scrip  |  This project is design to deploy all the different AWS services v
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 Terraform   |  By using an IaC tool, like Terraform, it is possible to deploy the necessary AWS services for the application ready to start working. |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Bash Scrip	This project is design to deploy all the different AWS services via a bash script.
+Terraform 	By using an IaC tool, like Terraform, it is possible to deploy the necessary AWS services for the application ready to start working.
+![image](https://github.com/user-attachments/assets/4a6bf897-4bdb-4599-848f-81b1ea75b56b)
