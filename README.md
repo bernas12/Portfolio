@@ -8,4 +8,6 @@ Bash Scrip  ->  This project is design to deploy all the different AWS services 
 
 Terraform   ->  By using an IaC tool, like Terraform, it is possible to deploy the necessary AWS services for the application ready to start working.
 
+DevOps Pipeline -> Project for creating a CI/CD pipeline to be alble to delevolp the application usig terraform
+
 
