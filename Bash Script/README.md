@@ -1,11 +1,11 @@
 1. Pre-requisites
     Upload the following files:
-        -App_script.sh
-        -metric_app_V1.zip
-        -lambda-policy.json
+        App_script.sh,
+        metric_app_V1.zip,
+        lambda-policy.json
 
 2. Prepare the script file
-    -chmod +x App_script.sh
+    chmod +x App_script.sh
 
 3. Give the requested inputs
 
