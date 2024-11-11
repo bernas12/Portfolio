@@ -11,6 +11,6 @@
 
 4. Attention CORS is NOT enabled
 
-5. Update da HTLM file with the invoke URL for the API
+5. Update the HTLM file with the invoke URL for the API
 
 6. Deploy the frontend with amplify or S3 services
